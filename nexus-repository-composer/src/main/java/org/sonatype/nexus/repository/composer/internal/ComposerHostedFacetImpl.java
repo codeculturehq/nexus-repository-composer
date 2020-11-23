@@ -54,7 +54,7 @@ public class ComposerHostedFacetImpl
                      final String sourceUrl, final String sourceReference, final Payload payload)
       throws IOException {
     content().put(
-        ComposerPathUtils.buildPackagePath(vendor, project, version),
+        ComposerPathUtils.buildPackagePath(vendor, project, version, null, "zip"),
         payload,
         sourceType,
         sourceUrl,
